@@ -16,7 +16,9 @@ editor (or any other application) to run based on the URI.
 
 ## Installation
 
-Register `ProtocolHandlerWrapper.exe` to handle protocol (`txmt` by default)
+Register `ProtocolHandlerWrapper.exe` to handle protocol (`txmt` by default),
+automates procedure described in http://msdn.microsoft.com/en-us/library/aa767914(VS.85).aspx
+
 
     > ruby register_protocol_handler_wrapper.rb [protocol]
 
