@@ -26,4 +26,4 @@ other protocols.
     > build_wrapper_here.bat
 
 Will build `ProtocolHandlerWrapper.exe` in top directory. Use if you want to
-debug wrapper or add any kind of login on the wrapper level.
+debug wrapper or add any kind of logic on the wrapper level.
