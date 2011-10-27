@@ -1,13 +1,13 @@
 REGEDIT4
 
-[HKEY_CLASSES_ROOT\<%= ARGV[0] || "txmt" %>]
-@="URL: Protocol handled by protocol handler wrapper"
+[HKEY_CLASSES_ROOT\<%= app %>]
+@="URL: Protocol handler for <%= app %>"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\txmt\shell]
+[HKEY_CLASSES_ROOT\<%= app %>\shell]
 
-[HKEY_CLASSES_ROOT\txmt\shell\open]
+[HKEY_CLASSES_ROOT\<%= app %>\shell\open]
 
-[HKEY_CLASSES_ROOT\txmt\shell\open\command]
-@="\"<%= File.expand_path("..\\ProtocolHandlerWrapper.exe", __FILE__).gsub(/[\\\/]/, "\\\\\\\\") %>\" \"%1\""
+[HKEY_CLASSES_ROOT\<%= app %>\shell\open\command]
+@="\"<%= ruby %>\" \"<%= path %>\" \"%1\""
 

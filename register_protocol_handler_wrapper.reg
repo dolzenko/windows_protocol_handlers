@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\txmt]
+@="URL: Protocol handler for txmt"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\txmt\shell]
+
+[HKEY_CLASSES_ROOT\txmt\shell\open]
+
+[HKEY_CLASSES_ROOT\txmt\shell\open\command]
+@="\"\\Users\\jose\\.rvm\\rubies\\ree-1.8.7-2011.03\\bin\\ruby\" \"\\Users\\jose\\Work\\github\\windows_protocol_handlers\\register_protocol_handler_wrapper.rb\\..\\ProtocolHandlerWrapper.exe\" \"%1\""
+
