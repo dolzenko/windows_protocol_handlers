@@ -9,5 +9,5 @@ REGEDIT4
 [HKEY_CLASSES_ROOT\<%= app %>\shell\open]
 
 [HKEY_CLASSES_ROOT\<%= app %>\shell\open\command]
-@="\"<%= ruby %>\" \"<%= path %>\" \"%1\""
+@="<%= args.join(" ") %> \"%1\""
 
